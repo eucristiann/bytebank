@@ -9,17 +9,6 @@ const cliente2 = new Cliente()
 cliente2.nome = 'Alice'
 cliente2.cpf = 88822233309
 
-const contaCorrenteRicardo = new ContaCorrente()
-contaCorrenteRicardo.cliente = cliente1
-contaCorrenteRicardo.agencia = 1001
-contaCorrenteRicardo.depositar(100)
-console.log(contaCorrenteRicardo)
-
-const contaCorrenteAlice = new ContaCorrente()
-contaCorrenteAlice.cliente = cliente2
-contaCorrenteAlice.agencia = 102
-contaCorrenteAlice.depositar(500)
-console.log(contaCorrenteAlice)
-contaCorrenteAlice.transferir(100, contaCorrenteRicardo)
-console.log(contaCorrenteRicardo, contaCorrenteAlice)
-
+const conta2 = new ContaCorrente()
+conta2.cliente = cliente2
+console.log(conta2.cliente)
