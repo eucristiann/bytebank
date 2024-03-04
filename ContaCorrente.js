@@ -17,6 +17,11 @@ export class ContaCorrente {
     _saldo = 0; // é privado por boa prática, mas tbm não é oficial
     // #saldo = 0 => privado, mas ainda não foi aprovado
 
+    constructor(agencia, cliente) {
+        this.agencia = agencia
+        this._cliente = cliente
+    }
+
     get saldo(){
         return this._saldo
     }
